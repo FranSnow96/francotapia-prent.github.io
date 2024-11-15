@@ -70,12 +70,13 @@ body {
 
  /**** FOTER ****/
 footer {
-    background-color: #333; 
-padding: 10px 0px 1px 0px;
-    position: relative;
-    margin-top: 20px;
-    width: 100%; 
-    z-index: 1000; 
+    background-color: #333;
+    padding: 10px 0px 1px 0px;
+    margin: 0; /* Elimina márgenes adicionales */
+    width: 100vw; /* Asegura que el footer abarque el ancho completo de la ventana */
+    position: relative; /* Puede ajustarse a fixed si debe estar siempre visible */
+    z-index: 1000;
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
 }
 
 .footer-list {
@@ -130,7 +131,7 @@ margin-bottom: 10px;
     font-family: "Fjalla One", sans-serif;
 }
 
-.somos h1 {
+.somos p {
     color: white;
     font-size: 170px;
     margin: 20px 0 0 10px;
@@ -366,27 +367,36 @@ input[type="submit"]:hover {
 
 /* Responsive Media Queries */
 @media (max-width: 1200px) {
-
+    /* Reducción del tamaño de las fuentes en pantallas grandes pero no demasiado pequeñas */
     .gatonaranja { font-size: 90px; }
     .destacados-text, .artistas-text, .semana-text { font-size: 80px; }
-    .titulo_card { font-size: 7.9rem; line-height: 120px;}
+    .titulo_card { font-size: 7.9rem; line-height: 120px; }
     .bienvenida { height: 500px; }
+    /* Para que las cards sean más pequeñas */
+    .item { flex: 1 1 40%; }
 }
 
 @media (max-width: 768px) {
-
+    /* Adaptación para pantallas medianas (tabletas, etc.) */
     .navbar-list { flex-direction: column; padding: 10px 0; }
     .gatonaranja { font-size: 80px; padding: 0; }
     .bienvenida { height: 400px; margin-top: 150px; }
     .card { margin: 10px; padding: 10px; }
-    .titulo_card { font-size: 7.9rem; line-height: 120px;}
+    .titulo_card { font-size: 7.9rem; line-height: 120px; }
+    .item { flex: 1 1 48%; }  /* Para dos elementos por fila */
 }
 
 @media (max-width: 576px) {
- 
-    .gatonaranja { font-size: 60px; }
+    /* Ajustes para pantallas pequeñas como móviles */
+    .gatonaranja { font-size: 50px; }
     .bienvenida { height: 300px; margin-top: 150px; }
+    .somos p {font-size: 50px;}
+    .newsletter p {font-size: 30px}
     .card { margin: 5px; padding: 5px; }
-    .titulo_card { font-size: 8rem; }
-    .titulo_card.sabrina { margin-left: 5px; font-size: 5.5rem; }
+    .titulo_card { font-size: 7rem; }
+    .titulo_card.sabrina { margin-left: 5px; font-size: 5rem; }
+    .titulo_card.olivia { margin-left: 5px; font-size: 6rem; }
+    .item { flex: 1 1 100%; }  /* Una card por fila */
+    .newsletter img { width: 50%; }
+    .reviews {width: 80%;}
 }
