@@ -394,8 +394,8 @@ input[type="submit"]:hover {
     .newsletter p {font-size: 30px}
     .card { margin: 5px; padding: 5px; }
     .titulo_card { font-size: 7rem; }
-    .titulo_card.sabrina { margin-left: 5px; font-size: 5rem; }
-    .titulo_card.olivia { margin-left: 5px; font-size: 6rem; }
+    .titulo_card.sabrina { margin-left: 5px; font-size: 4.5rem; }
+    .titulo_card.olivia { margin-left: 5px; font-size: 5.5rem; }
     .item { flex: 1 1 100%; }  /* Una card por fila */
     .newsletter img { width: 50%; }
     .reviews {width: 80%;}
