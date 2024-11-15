@@ -1,0 +1,134 @@
+body {
+    margin-top: 60px;
+    min-height: 100vh;
+    height: 100%;
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    background: no-repeat;
+    background-image: url('/img/bgbody.jpg');
+    
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Termina totalmente visible */
+    }
+}
+
+    .navbar-list {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 20px 30px; 
+        margin: 0; 
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.navbar-item {
+    
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(253, 253, 253);
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-item a:hover {
+    color: #007bff;
+}
+ /**** FOTER ****/
+footer {
+    background-color: #333; 
+padding: 10px 0px 1px 0px;
+    position: relative;
+    margin-top: 20px;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.footer-list {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;    
+    height: 100vh;          
+}
+
+.h1form {
+    margin-bottom: 20px; 
+}
+
+form {
+    font-family: "Fjalla One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: rgba(4, 130, 146, 0.37);
+    width: 30%;
+    height: 50%;
+    padding: 4%;
+    border: 2px solid #cccccca6;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.h1form {
+    padding-top: 10px;
+    font-size: 40px;
+
+}
+
+input, textarea {
+    width: 100%; /* Ocupa el 100% del ancho del formulario */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
