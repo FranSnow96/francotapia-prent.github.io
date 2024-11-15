@@ -367,27 +367,28 @@ input[type="submit"]:hover {
 
 /* Responsive Media Queries */
 @media (max-width: 1200px) {
-    /* Reducción del tamaño de las fuentes en pantallas grandes pero no demasiado pequeñas */
     .gatonaranja { font-size: 90px; }
     .destacados-text, .artistas-text, .semana-text { font-size: 80px; }
     .titulo_card { font-size: 7.9rem; line-height: 120px; }
     .bienvenida { height: 500px; }
-    /* Para que las cards sean más pequeñas */
     .item { flex: 1 1 40%; }
+      .somos p {font-size: 45px;}
+    .newsletter p {font-size: 40px}
 }
 
 @media (max-width: 768px) {
-    /* Adaptación para pantallas medianas (tabletas, etc.) */
+
     .navbar-list { flex-direction: column; padding: 10px 0; }
     .gatonaranja { font-size: 80px; padding: 0; }
     .bienvenida { height: 400px; margin-top: 150px; }
     .card { margin: 10px; padding: 10px; }
     .titulo_card { font-size: 7.9rem; line-height: 120px; }
-    .item { flex: 1 1 48%; }  /* Para dos elementos por fila */
+    .item { flex: 1 1 48%; } 
+    .somos p {font-size: 40px;}
+    .newsletter p {font-size: 35px}
 }
 
 @media (max-width: 576px) {
-    /* Ajustes para pantallas pequeñas como móviles */
     .gatonaranja { font-size: 50px; }
     .bienvenida { height: 300px; margin-top: 150px; }
     .somos p {font-size: 35px;}
@@ -396,7 +397,7 @@ input[type="submit"]:hover {
     .titulo_card { font-size: 6rem; }
     .titulo_card.sabrina { margin-left: 5px; font-size: 4.5rem; }
     .titulo_card.olivia { margin-left: 5px; font-size: 5.5rem; }
-    .item { flex: 1 1 100%; }  /* Una card por fila */
+    .item { flex: 1 1 100%; } 
     .newsletter img { width: 50%; }
     .reviews {width: 80%;}
     .desta-texto h1 {font-size: 40px; }
