@@ -390,7 +390,7 @@ input[type="submit"]:hover {
     /* Ajustes para pantallas pequeñas como móviles */
     .gatonaranja { font-size: 50px; }
     .bienvenida { height: 300px; margin-top: 150px; }
-    .somos p {font-size: 40px;}
+    .somos p {font-size: 35px;}
     .newsletter p {font-size: 30px}
     .card { margin: 5px; padding: 5px; }
     .titulo_card { font-size: 6rem; }
